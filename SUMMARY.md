@@ -36,6 +36,7 @@
 ## TEST
 
 * Python自动化
+* 制作一个木马图片
 
 ## Question
 
