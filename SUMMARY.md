@@ -31,7 +31,7 @@
 * [Kibana](kibana.md)
 * [Mongodb](mongodb.md)
   * \(Linux\)Mongodb安装教程
-  * \(Windows\)Mongodb安装教程
+  * [\(Windows\)Mongodb安装教程](mongodb/windowsmongodban-zhuang-jiao-cheng.md)
 
 ## TEST
 
