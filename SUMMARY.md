@@ -26,7 +26,7 @@
   * [Redis常用命令](redishuan-cun-ji-zhu/redischang-yong-ming-ling.md)
   * Redis集群搭建
 * [RabbitMQ消息队列](rabbitmqxiao-xi-dui-lie.md)
-  * \(Windows\)RabbitMQ安装及使用
+  * [\(Windows\)RabbitMQ安装及使用](DEV-Service/Linux-Command/windowsrabbitmqan-zhuang-ji-shi-yong.md)
   * [\(Linux\)RabbitMQ安装及使用](DEV-Service/Linux-Command/linuxxia-an-zhuang-rabbitmq.md)
 * [Kibana](kibana.md)
 * [Mongodb](mongodb.md)
