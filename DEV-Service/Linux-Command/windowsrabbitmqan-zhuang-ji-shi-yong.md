@@ -5,6 +5,6 @@
 RabbitMQ依赖于ErLang语言，所以需要在服务器上首先安装ErLang环境。
 
 #### 1、下载ErLang
-下载ErLang链接【http://www.erlang.org/downloads】
+[下载ErLang链接](http://www.erlang.org/downloads)
 
 
