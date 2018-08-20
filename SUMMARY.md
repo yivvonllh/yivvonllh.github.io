@@ -22,13 +22,13 @@
   * [Spring Cloud 负载均衡Ribbon、服务熔断Hystrix](Spring-Cloud/Feign.md)
   * [Spring Cloud 链路跟踪Zipkin](Spring-Cloud/Zipkin.md)
   * [Spring Cloud 服务实时监控Hystrix Dashboard、Turbine](Spring-Cloud/Turbine.md)
-* Redis缓存技术
+* [Redis缓存技术](redishuan-cun-ji-zhu.md)
   * Redis常用命令
   * Redis集群搭建
 * [RabbitMQ消息队列](rabbitmqxiao-xi-dui-lie.md)
   * \(Windows\)RabbitMQ安装及使用
   * [\(Linux\)RabbitMQ安装及使用](DEV-Service/Linux-Command/linuxxia-an-zhuang-rabbitmq.md)
-* Kibana
+* [Kibana](kibana.md)
 
 ## TEST
 
