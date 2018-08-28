@@ -17,20 +17,20 @@
   * [多环境配置](xiang-mu-da-jian-he-gui-zhi-yin/duo-huan-jing-pei-zhi.md)
   * [集成Redis](xiang-mu-da-jian-he-gui-zhi-yin/ji-cheng-redis.md)
 * [SpringCloud篇](xiang-mu-da-jian-he-gui-zhi-yin/springboot+springcloud.md)
-  * SpringCloud入门
+  * [SpringCloud入门](Spring-Cloud/springcloudru-men.md)
   * [Spring Cloud 网关Zuul](Spring-Cloud/spring-cloud-wang-guan-zuul.md)
   * [Spring Cloud 负载均衡Ribbon、服务熔断Hystrix](Spring-Cloud/Feign.md)
   * [Spring Cloud 链路跟踪Zipkin](Spring-Cloud/Zipkin.md)
   * [Spring Cloud 服务实时监控Hystrix Dashboard、Turbine](Spring-Cloud/Turbine.md)
 * [Redis缓存技术](redishuan-cun-ji-zhu.md)
   * [Redis常用命令](redishuan-cun-ji-zhu/redischang-yong-ming-ling.md)
-  * Redis集群搭建
+  * [Redis集群搭建](redishuan-cun-ji-zhu/redisji-qun-da-jian.md)
 * [RabbitMQ消息队列](rabbitmqxiao-xi-dui-lie.md)
   * [\(Windows\)RabbitMQ安装及使用](DEV-Service/Linux-Command/windowsrabbitmqan-zhuang-ji-shi-yong.md)
   * [\(Linux\)RabbitMQ安装及使用](DEV-Service/Linux-Command/linuxxia-an-zhuang-rabbitmq.md)
 * [Kibana](kibana.md)
 * [Mongodb](mongodb.md)
-  * \(Linux\)Mongodb安装教程
+  * [\(Linux\)Mongodb安装教程](mongodb/linuxmongodban-zhuang-jiao-cheng.md)
   * [\(Windows\)Mongodb安装教程](mongodb/windowsmongodban-zhuang-jiao-cheng.md)
 
 ## TEST

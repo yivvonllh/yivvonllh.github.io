@@ -13,7 +13,6 @@ zipkin分为服务器端和客户端，客户端就是微服务中的应用.
 POM文件
 
 ```
-
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -63,7 +62,6 @@ POM文件
         </plugins>
     </build>
 </project>
-
 ```
 
 启动类
@@ -82,13 +80,11 @@ public class TraceApplication {
         SpringApplication.run(TraceApplication.class,args);
     }
 }
-
 ```
 
 配置文件
 
 ```
-
 spring:
   application:
     name: trace
@@ -98,15 +94,13 @@ spring:
 
 server:
   port: 9411
-
 ```
 
-启动后访问 http://localhost:9411/zipkin/ 就能看到界面
+启动后访问 [http://localhost:9411/zipkin/](http://localhost:9411/zipkin/) 就能看到界面
 
 ### 客户端
 
 默认我们已经有了基本的微服务工程，想要微服务之间的调用被zipkin发现，需要在服务工程的POM中引入依赖、修改配置文件
-
 
 添加依赖
 
@@ -124,7 +118,6 @@ server:
 添加配置
 
 ```
-
 spring:
   sleuth:
     web:
@@ -134,18 +127,16 @@ spring:
       probability: 1.0 # 将采样比例设置为 1.0，也就是全部都需要。默认是 0.1
   zipkin:
     base-url: http://localhost:9411/ # 指定 Zipkin 服务器的地址
-
 ```
 
-> Spring Cloud Sleuth 有一个 Sampler 策略，可以通过这个实现类来控制采样算法。采样器不会阻碍 span 相关 id 的产生，但是会对导出以及附加事件标签的相关操作造成影响。 Sleuth 默认采样算法的实现是 Reservoir sampling，具体的实现类是 PercentageBasedSampler，默认的采样比例为: 0.1(即 10%)。不过我们可以通过spring.sleuth.sampler.percentage来设置，所设置的值介于 0.0 到 1.0 之间，1.0 则表示全部采集。
-
+> Spring Cloud Sleuth 有一个 Sampler 策略，可以通过这个实现类来控制采样算法。采样器不会阻碍 span 相关 id 的产生，但是会对导出以及附加事件标签的相关操作造成影响。 Sleuth 默认采样算法的实现是 Reservoir sampling，具体的实现类是 PercentageBasedSampler，默认的采样比例为: 0.1\(即 10%\)。不过我们可以通过spring.sleuth.sampler.percentage来设置，所设置的值介于 0.0 到 1.0 之间，1.0 则表示全部采集。
 
 ## 存储方式
-Zipkin 提供了可插拔数据存储方式：In-Memory、MySql、Cassandra 以及 Elasticsearch。
+
+Zipkin 提供了可插拔数据存储方式：In-Memory、MySql、Cassandra 以及 Elasticsearch。  
 上面示例的存储方式就是In-Memory，下面我们介绍下MySql的存储方式。
 
 只需要添加服务端依赖、配置，不需要修改客户端
-
 
 ```
 <!--保存到数据库需要如下依赖-->
@@ -167,12 +158,11 @@ Zipkin 提供了可插拔数据存储方式：In-Memory、MySql、Cassandra 以�
 配置文件
 
 ```
-
 spring:
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
-    username: root
-    password: 123456
+    username: 
+    password: 
     driver-class-name: com.mysql.jdbc.Driver
     continue-on-error: true
   application:
@@ -188,7 +178,6 @@ zipkin:
     type: mysql
 server:
   port: 9411
-
 ```
 
 ## 发送方式
@@ -222,8 +211,8 @@ zipkin:
     rabbitmq:
       addresses: ${RABBIT_MQ_HOST:127.0.0.1}
       port: ${RABBIT_MQ_PORT:5672}
-      password: guest
-      username: guest
+      password: 
+      username: 
       queue: zipkin2
 ```
 
@@ -248,22 +237,19 @@ spring:
       queue: zipkin2
 ```
 
-示例：http://gitlab.utech.com/Vick.Zeng/trace.git
-
-
-
+示例：[http://gitlab.utech.com/Vick.Zeng/trace.git](http://gitlab.utech.com/Vick.Zeng/trace.git)
 
 # 二、SpringBoot2.0后版本zipkin
 
-关于 Zipkin 的服务端，在使用 Spring Boot 2.x 版本后，官方就不推荐自行定制编译了，反而是直接提供了编译好的 jar 包来给我们使用，详情请看 [upgrade to Spring Boot 2.0 NoClassDefFoundError UndertowEmbeddedServletContainerFactory · Issue #1962 · openzipkin/zipkin · GitHub](https://github.com/openzipkin/zipkin/issues/1962)
+关于 Zipkin 的服务端，在使用 Spring Boot 2.x 版本后，官方就不推荐自行定制编译了，反而是直接提供了编译好的 jar 包来给我们使用，详情请看 [upgrade to Spring Boot 2.0 NoClassDefFoundError UndertowEmbeddedServletContainerFactory · Issue \#1962 · openzipkin/zipkin · GitHub](https://github.com/openzipkin/zipkin/issues/1962)
 
-并且以前的```@EnableZipkinServer```也已经被打上了```@Deprecated```
+并且以前的`@EnableZipkinServer`也已经被打上了`@Deprecated`
 
 ## 启动
 
-在Linux下中使用以下脚本下载jar包，如下(PS：并没有找到直接下载jar包的链接，只能在Linux上进行)
+在Linux下中使用以下脚本下载jar包，如下\(PS：并没有找到直接下载jar包的链接，只能在Linux上进行\)
 
-``` curl -sSL https://zipkin.io/quickstart.sh | bash -s ```
+`curl -sSL https://zipkin.io/quickstart.sh | bash -s`
 
 把jar包下载下来之后使用命令启动，以下是收集使用rabbitmq、存储方式使用mysql的示例
 
@@ -272,13 +258,14 @@ java -jar zipkin.jar --RABBIT_ADDRESSES=172.18.21.219:5672 --RABBIT_PASSWORD=adm
 ```
 
 linux 启动也可以吧参数放前面（PS：为什么？）
+
 ```
 RABBIT_ADDRESSES=172.18.21.219:5672 RABBIT_PASSWORD=admin RABBIT_USER=admin STORAGE_TYPE=mysql MYSQL_HOST=172.18.21.217 MYSQL_USER=utech MYSQL_PASS=Utech2018 MYSQL_DB=utech_zipkin  java -jar zipkin.jar
 ```
 
 如果是Docker的话
 
-```docker run -d -p 9411:9411 openzipkin/zipkin```
+`docker run -d -p 9411:9411 openzipkin/zipkin`
 
 全部配置信息
 
@@ -483,7 +470,6 @@ management:
         auto-time-requests: false
 ```
 
-
 # 三、参考
 
 [Spring Cloud（十二）：分布式链路跟踪 Sleuth 与 Zipkin【Finchley 版】](https://windmt.com/2018/04/24/spring-cloud-12-sleuth-zipkin/)
@@ -491,3 +477,4 @@ management:
 [Sleuth with Zipkin over RabbitMQ or Kafka](http://cloud.spring.io/spring-cloud-static/Finchley.RELEASE/multi/multi__introduction.html#_sleuth_with_zipkin_over_rabbitmq_or_kafka)
 
 [Cloud-Admin](https://gitee.com/minull/ace-security)
+
