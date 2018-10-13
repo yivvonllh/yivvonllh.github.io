@@ -37,6 +37,7 @@
   * 拦截过滤器模式
   * 服务定位器模式
   * 传输对象模式
+* [DDD-领域驱动设计](dddling-yu-qu-dong-she-ji.md)
 
 ## DEV
 
@@ -52,6 +53,7 @@
     * [Spring Security使用](Spring-Boot/spring-security.md)
     * [多环境配置](xiang-mu-da-jian-he-gui-zhi-yin/duo-huan-jing-pei-zhi.md)
     * [集成Redis](xiang-mu-da-jian-he-gui-zhi-yin/ji-cheng-redis.md)
+  * [SpringCloud-Eureka集群搭建](Spring-Cloud/springcloud-eurekaji-qun-da-jian.md)
   * [Spring Cloud 网关Zuul](Spring-Cloud/spring-cloud-wang-guan-zuul.md)
   * [Spring Cloud 负载均衡Ribbon、服务熔断Hystrix](Spring-Cloud/Feign.md)
   * [Spring Cloud 链路跟踪Zipkin](Spring-Cloud/Zipkin.md)
