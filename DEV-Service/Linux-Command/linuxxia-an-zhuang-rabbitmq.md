@@ -245,10 +245,10 @@ public void sendMessageFaceToFace(String message) {
 public class AckMessageCustomer {
     public void processMessage2() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("192.168.245.128");
-        factory.setPort(5672);
-        factory.setUsername("admin");
-        factory.setPassword("admin");
+        factory.setHost("");
+        factory.setPort();
+        factory.setUsername("");
+        factory.setPassword("");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         //pull方式获取信息
