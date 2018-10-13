@@ -9,6 +9,8 @@
 
 ## DEV
 
+* [Linux常用命令](linuxchang-yong-ming-ling.md)
+  * [Linux基础篇](linuxchang-yong-ming-ling/linuxji-chu-pian.md)
 * [SpringBoot篇](springbootpian.md)
   * [SpringBoot项目搭建](xiang-mu-da-jian-he-gui-zhi-yin/springbootxiang-mu-da-jian.md)
   * [Spring boot 注解](Spring-Boot/Spring-boot注解.md)
@@ -32,6 +34,8 @@
 * [Mongodb](mongodb.md)
   * [\(Linux\)Mongodb安装教程](mongodb/linuxmongodban-zhuang-jiao-cheng.md)
   * [\(Windows\)Mongodb安装教程](mongodb/windowsmongodban-zhuang-jiao-cheng.md)
+
+## 设计模式
 
 ## TEST
 
