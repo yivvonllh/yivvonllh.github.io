@@ -8,8 +8,8 @@
   * [领域驱动设计](ling-yu-qu-dong-she-ji.md)
 * [设计模式](she-ji-mo-shi.md)
   * [工厂模式](she-ji-mo-shi/gong-chang-mo-shi.md)
-  * 抽象工厂模式
-  * 单例模式
+  * [抽象工厂模式](she-ji-mo-shi/chou-xiang-gong-chang-mo-shi.md)
+  * [单例模式](she-ji-mo-shi/dan-li-mo-shi.md)
   * 建造者模式
   * 原型模式
   * 适配器模式
