@@ -10,3 +10,10 @@
     
 #### 3、 显示内存
     free -h
+
+#### 4、 Banner
+    1 sudo apt-get update
+    2 sudo apt-get install sysvbanner
+    3 banner LOVE
+    4 printerbanner -w 50 A
+    
