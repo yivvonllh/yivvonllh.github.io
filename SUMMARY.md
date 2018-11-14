@@ -44,6 +44,7 @@
 * [Linux篇](linuxchang-yong-ming-ling.md)
   * [Linux基础篇](linuxchang-yong-ming-ling/linuxji-chu-pian.md)
   * [Docker](linuxchang-yong-ming-ling/docker.md)
+  * [Linux安裝jdk](linuxchang-yong-ming-ling/linuxan-zhuang-jdk.md)
 * [SpringCloud篇](xiang-mu-da-jian-he-gui-zhi-yin/springboot+springcloud.md)
   * [SpringCloud入门](Spring-Cloud/springcloudru-men.md)
   * [SpringBoot篇](springbootpian.md)
