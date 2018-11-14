@@ -45,6 +45,7 @@ eg:
     export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
     export PATH=$PATH:${JAVA_PATH}
 ```
+:wq记得保存后退出
 7、配置好之后，让配置立即生效：
 ```java
     source /etc/profile
